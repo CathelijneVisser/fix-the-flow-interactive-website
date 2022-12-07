@@ -1,10 +1,14 @@
 const allButtons = document.querySelectorAll(".js-expand");
 const menuClosed = document.querySelector(".menu-button");
 const nav = document.querySelector(".nav");
+let closeLogin = document.querySelector(".login-cross");
+let openLogin = document.querySelector(".acount-icon");
+let loginContainer = document.querySelector(".login-container");
 
-console.log(allButtons);
+console.log(closeLogin);
+
 allButtons.forEach((button) => {
-	button.addEventListener("click", function () {
+	button.addEventListenr("click", function () {
 		button.parentElement.classList.toggle("expand");
 	});
 });
@@ -18,3 +22,11 @@ if (menuClosed) {
 		nav.classList.toggle("open");
 	});
 }
+
+closeLogin.addEventListener("click", () => {
+	loginContainer.classList.toggle("expand");
+});
+
+openLogin.addEventListener("click", () => {
+	loginContainer.classList.toggle("expand");
+});

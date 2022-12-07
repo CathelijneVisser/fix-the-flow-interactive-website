@@ -17,19 +17,18 @@
 	--layout-spacing: max(8vh, 3em);
 	--grid-spacing: calc(var(--layout-spacing) * 2);
 	--purple: #524dd0;
+	--light-purple: #84389e;
 	--blue: #00ffec;
 	--white: #fff;
 	--black: #110f2a;
 	--purple-opacity: rgb(82, 77, 208, 0.4);
+	--reverse-gradient: linear-gradient(90deg, #524dd0 100%, #84389e 0%);
+	--gradient: linear-gradient(90deg, #524dd0 0%, #84389e 100%);
 }
 
 /* :focus-visible {
 	outline: solid 2px var(--black);
 } */
-
-body > * + * {
-	margin-top: var(--layout-spacing);
-}
 
 header {
 	display: flex;
@@ -43,6 +42,9 @@ header {
 	box-shadow: rgba(82, 77, 208, 0.24) 0px 3px 8px;
 }
 
+.account-icon {
+	margin: auto 1rem;
+}
 /*************************************************************************************************/
 /* menu */
 /*************************************************************************************************/
@@ -86,6 +88,7 @@ header {
 
 .menu-content a {
 	background-color: var(--white);
+	color: var(--black);
 	border: none;
 	text-decoration: none;
 	font-size: 0.75em;
@@ -134,6 +137,10 @@ header {
 	.menu-content a:hover {
 		color: var(--black);
 	}
+
+	.menu-container {
+		display: flex;
+	}
 }
 
 /*******************************************************************************************************/
@@ -171,6 +178,48 @@ body {
 	}
 }
 
+/***************************************************************************************aa/
+/* Login */
+/*************************************************************************************/
+
+.login-container {
+	height: 100vh;
+	/* margin-top: -100vh; */
+	background: var(--gradient);
+	padding: 4rem;
+}
+
+.login-container .expand {
+	margin: 0;
+}
+
+.login-cross {
+	color: var(--white);
+}
+
+fieldset {
+	margin: 0 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+legend {
+	color: var(--white);
+}
+
+label {
+	color: var(--white);
+}
+
+.login-button {
+	margin-top: 0.5rem;
+	width: 3rem;
+	background-color: var(--reverse-gradient);
+	/* align-self: center; */
+	color: var(--white);
+
+	border-radius: 0.25rem;
+}
 /***************************************************************************************aa/
 /* inleiding */
 /*************************************************************************************/
