@@ -1,0 +1,479 @@
+@font-face {
+	font-family: "Rajdhani";
+	src: url("../assets/fonts/Rajdhani-SemiBold.ttf") format("ttf"),
+		url("../assets/fonts/Rajdhani-SemiBold.woff") format("woff");
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: Rajdhani, sans-serif;
+	scroll-behavior: smooth;
+}
+
+:root {
+	font-size: min(calc(1em + 1vw), 4em);
+	line-height: 140%;
+	--layout-spacing: max(8vh, 3em);
+	--grid-spacing: calc(var(--layout-spacing) * 2);
+	--purple: #524dd0;
+	--blue: #00ffec;
+	--white: #fff;
+	--black: #110f2a;
+	--purple-opacity: rgb(82, 77, 208, 0.4);
+}
+
+/* :focus-visible {
+	outline: solid 2px var(--black);
+} */
+
+body > * + * {
+	margin-top: var(--layout-spacing);
+}
+
+header {
+	display: flex;
+	text-align: center;
+	background-color: var(--purple);
+	color: var(--white);
+	width: 100%;
+	height: 84px;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: rgba(82, 77, 208, 0.24) 0px 3px 8px;
+}
+
+/*************************************************************************************************/
+/* menu */
+/*************************************************************************************************/
+
+.menu-button {
+	background: none;
+	border: none;
+	height: 84px;
+	margin-right: 0.5rem;
+}
+
+.menu-button span {
+	background-color: var(--white);
+	height: 2.5px;
+	width: 1.5rem;
+	display: block;
+	margin: 5px;
+	border-radius: 1rem;
+}
+
+.nav {
+	display: none;
+	top: 84px;
+	right: 0;
+}
+
+.nav.open {
+	display: block;
+	z-index: 2;
+	position: absolute;
+}
+
+.menu-content li {
+	width: 100%;
+	height: 3.5rem;
+	padding: 0;
+	border-right: solid 1px var(--purple);
+	border-bottom: solid 1px var(--purple);
+	background-color: var(--white);
+}
+
+.menu-content a {
+	background-color: var(--white);
+	border: none;
+	text-decoration: none;
+	font-size: 0.75em;
+}
+
+@media (min-width: 900px) {
+	.nav {
+		margin-top: 0;
+		top: 0;
+		height: 84px;
+		display: block;
+		position: static;
+	}
+
+	.menu-button {
+		display: none;
+	}
+
+	.menu-content {
+		display: flex;
+		background-color: var(--purple);
+	}
+
+	.nav {
+		height: 84px;
+		top: 0;
+		z-index: 0;
+	}
+
+	.menu-content li {
+		background-color: var(--purple);
+		/* border: 1px solid var(--blue); */
+		padding: 0;
+		margin: 0rem 0.75rem;
+		flex-wrap: nowrap;
+		width: auto;
+		height: 84px;
+	}
+
+	.menu-content a {
+		background-color: var(--purple);
+		color: var(--white);
+		margin: 0;
+	}
+
+	.menu-content a:hover {
+		color: var(--black);
+	}
+}
+
+/*******************************************************************************************************/
+/* header */
+/********************************************************************************************/
+
+h1 {
+	padding-top: 0.5em;
+	font-size: min(calc(2em + 1vw), 4em);
+}
+
+.logo {
+	height: 50px;
+	width: auto;
+}
+
+.logo1 {
+	display: none;
+}
+
+body {
+	overflow-y: scroll;
+}
+
+@media (min-width: 900px) {
+	.logo {
+		display: none;
+	}
+
+	.logo1 {
+		display: block;
+		width: auto;
+		height: 84px;
+		align-self: flex-start;
+	}
+}
+
+/***************************************************************************************aa/
+/* inleiding */
+/*************************************************************************************/
+
+.inleiding {
+	margin-top: 0;
+	position: relative;
+	overflow: hidden;
+	max-width: 100%;
+}
+
+.inleiding img {
+	opacity: 0.28;
+	position: absolute;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.inleiding ::before {
+	content: "";
+	background-color: rgb(82, 77, 208, 1);
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	min-width: 100%;
+	height: 100%;
+}
+
+.inleiding h1 {
+	padding: 1rem;
+	position: relative;
+	color: var(--white);
+	/* margin: 1rem; */
+}
+
+.inleiding h2 {
+	padding: 1rem;
+	position: relative;
+	color: var(--white);
+}
+
+.inleiding p {
+	color: var(--white);
+	padding: 1rem;
+	position: relative;
+	max-width: 30em;
+}
+
+@media (min-width: 900px) {
+}
+
+/****************************************************************************************/
+/* kaart */
+/****************************************************************************************/
+
+.map {
+	margin: 0;
+}
+
+.header-map {
+	padding-left: 1rem;
+}
+
+@media (min-width: 900px) {
+	.map {
+		max-width: 90%;
+		margin-left: 5%;
+		margin-bottom: 5%;
+	}
+}
+
+/****************************************************************************************/
+/* overzicht */
+/****************************************************************************************/
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+li {
+	padding: 2em;
+	grid-row: 1 / span 2;
+	justify-self: center;
+	display: flex;
+	overflow-x: hidden;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.beginbalk {
+	background-color: var(--purple);
+	color: var(--white);
+	width: 100%;
+}
+
+.utrecht {
+	background-color: var(--white);
+	color: var(--black);
+	border-bottom: solid 1px var(--purple);
+}
+
+.schiedam {
+	background-color: var(--purple);
+	color: var(--white);
+	border-bottom: solid 1px var(--blue);
+}
+
+.amsterdam {
+	background-color: var(--white);
+	color: var(--black);
+	border-bottom: solid 1px var(--purple);
+}
+
+.rotterdam {
+	background-color: var(--purple);
+	color: var(--white);
+	border-bottom: solid 1px var(--blue);
+}
+
+.more-info {
+	max-height: 0;
+	width: 100%;
+	overflow: hidden;
+	transition: 1s;
+	display: flex;
+	justify-content: space-between;
+}
+
+.straat {
+	height: auto;
+	width: 7em;
+}
+
+@media (min-width: 900px) {
+	.overzicht {
+		max-width: 90%;
+		margin-left: 5%;
+		margin-bottom: 5%;
+	}
+
+	.beginbalk {
+		margin-left: 0;
+		max-width: 100%;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.stad {
+		width: 90%;
+		border: none;
+	}
+
+	.naam {
+		max-width: 42.5%;
+		flex-grow: 1;
+	}
+
+	.utrecht {
+		border: solid 2px var(--purple);
+	}
+
+	.amsterdam {
+		border: solid 2px var(--purple);
+	}
+
+	.rotterdam {
+		border: none;
+	}
+
+	.schiedam {
+		border: none;
+	}
+}
+
+/****************************************************************************************/
+/*knop*/
+/****************************************************************************************/
+
+.button {
+	background-color: var(--blue);
+	border-radius: 5px;
+	width: min(15vw, 15em);
+	height: 2em;
+	border: none;
+	transition: 0.2s;
+}
+
+.purple-button:hover {
+	background-color: var(--purple);
+	color: var(--white);
+}
+
+.white-button:hover {
+	background-color: var(--white);
+	color: var(--purple);
+}
+
+.expand .more-info {
+	max-height: 400px;
+	padding-top: 1em;
+}
+
+.meer {
+	position: relative;
+}
+
+.minder {
+	display: none;
+}
+
+.expand .meer {
+	display: none;
+}
+
+.expand .minder {
+	display: block;
+}
+
+.m-m {
+	position: relative;
+}
+
+@media (min-width: 900px) {
+	.button {
+		display: none;
+		width: 5em;
+		height: 2em;
+	}
+
+	.more-info {
+		max-height: 400px;
+		padding-top: 1em;
+	}
+}
+
+/****************************************************************************************/
+/*footer*/
+/****************************************************************************************/
+
+footer {
+	background-color: var(--black);
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0;
+}
+
+.footer {
+	align-self: center;
+	font-size: min(calc(0.75em + 0.75vw), 2em);
+	padding-left: 1.8rem;
+}
+
+a {
+	border: solid 2px var(--blue);
+	border-radius: 0.25em;
+	background-color: var(--blue);
+	align-self: center;
+	margin: 1em;
+	color: black;
+	font-size: min(calc(0.75em + 0.75vw), 2em);
+}
+
+.logo3 {
+	display: block;
+	width: auto;
+	height: 84px;
+}
+
+/****************************************************************************************/
+/* responsive maken */
+/****************************************************************************************/
+
+@media (min-width: 900px) {
+	:focus {
+		outline: solid 2px var(--white);
+	}
+
+	h1 {
+		font-size: min(calc(3em + 1vw), 4em);
+	}
+
+	h2 {
+		font-size: min(calc(2em + 1vw), 4em);
+	}
+
+	ul p {
+		font-size: min(calc(1em + 1vw), 0.75em);
+	}
+
+	li {
+		padding: 1rem;
+	}
+
+	.straat {
+		width: 5em;
+		height: auto;
+	}
+}
