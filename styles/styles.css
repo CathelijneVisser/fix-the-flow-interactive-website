@@ -184,17 +184,19 @@ body {
 
 .login-container {
 	height: 100vh;
-	/* margin-top: -100vh; */
+	margin-top: -100vh;
 	background: var(--gradient);
 	padding: 4rem;
+	transition: margin 0.75s;
 }
 
-.login-container .expand {
-	margin: 0;
+.login-container.expand {
+	margin-top: 0;
 }
 
 .login-cross {
 	color: var(--white);
+	margin-left: 90%;
 }
 
 fieldset {
@@ -211,13 +213,18 @@ label {
 	color: var(--white);
 }
 
+form a {
+	border: none;
+	background: transparent;
+	color: var(--white);
+}
+
 .login-button {
 	margin-top: 0.5rem;
 	width: 3rem;
 	background: var(--reverse-gradient);
 	align-self: center;
 	color: var(--white);
-
 	border-radius: 0.25rem;
 }
 /***************************************************************************************aa/

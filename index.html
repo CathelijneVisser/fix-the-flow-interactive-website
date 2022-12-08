@@ -10,8 +10,8 @@
 		<form class="login-container">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				width="20"
-				height="20"
+				width="25"
+				height="25"
 				fill="currentColor"
 				class="login-cross"
 				viewBox="0 0 16 16"
@@ -29,7 +29,22 @@
 				<label for="password">wachtwoord</label>
 				<input id="password" type="password" required />
 
-				<button class="login-button" aria-label="inloggen verzenden">
+				<a class="ww-vergeten">Wachtwoord vergeten?</a>
+
+				<dialog class="ww-dialog">
+					<p>
+						We hebben een email gestuurd waar u uw wachtwoord kan
+						resetten.
+					</p>
+					<button type="subbit">Ok</button>
+				</dialog>
+				<a href="">Nog geen lid? registreren?</a>
+
+				<button
+					type="submit"
+					class="login-button"
+					aria-label="inloggen verzenden"
+				>
 					Inloggen
 				</button>
 			</fieldset>
@@ -219,7 +234,7 @@
 			<li class="stad utrecht overzicht" id="utrecht">
 				<h3>Utrecht:</h3>
 			</li>
-			<li class="tijn utrecht overzicht naam expand">
+			<li class="tijn utrecht overzicht">
 				<h3>Tijn</h3>
 				<button
 					id="tijn"
