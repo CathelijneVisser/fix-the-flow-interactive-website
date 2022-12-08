@@ -22,7 +22,7 @@
 	--white: #fff;
 	--black: #110f2a;
 	--purple-opacity: rgb(82, 77, 208, 0.4);
-	--reverse-gradient: linear-gradient(90deg, #524dd0 100%, #84389e 0%);
+	--reverse-gradient: linear-gradient(90deg, #84389e 0%, #524dd0 100%);
 	--gradient: linear-gradient(90deg, #524dd0 0%, #84389e 100%);
 }
 
@@ -214,8 +214,8 @@ label {
 .login-button {
 	margin-top: 0.5rem;
 	width: 3rem;
-	background-color: var(--reverse-gradient);
-	/* align-self: center; */
+	background: var(--reverse-gradient);
+	align-self: center;
 	color: var(--white);
 
 	border-radius: 0.25rem;
