@@ -1,0 +1,47 @@
+body {
+	background: var(--gradient);
+}
+
+.login-container {
+	background: var(--gradient);
+	transition: margin 0.75s;
+}
+
+.login-container.expand {
+	margin-top: 0;
+}
+
+.login-cross {
+	color: var(--white);
+	margin-left: 90%;
+	margin-top: 1rem;
+}
+
+fieldset {
+	margin: 0 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+legend {
+	color: var(--white);
+}
+
+label {
+	color: var(--white);
+}
+
+form a {
+	border: none;
+	background: transparent;
+	color: var(--white);
+}
+
+.login-button {
+	margin-top: 0.5rem;
+	width: 3rem;
+	background: var(--reverse-gradient);
+	align-self: center;
+	color: var(--white);
+	border-radius: 0.25rem;
+}

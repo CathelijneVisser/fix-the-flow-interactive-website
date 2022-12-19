@@ -1,11 +1,11 @@
-let closeLogin = document.querySelector(".login-cross");
-let openLogin = document.querySelector(".account-icon");
-let loginContainer = document.querySelector(".login-container");
+const closeLogin = document.querySelector(".login-cross");
+const openLogin = document.querySelector(".inloggen");
+const loginContainer = document.querySelector(".login-container");
 const allButtons = document.querySelectorAll(".js-expand");
 const menuClosed = document.querySelector(".menu-button");
 const nav = document.querySelector(".nav");
-var wwDialog = document.querySelector("ww-dialog");
-var diaOpen = document.querySelector("ww-vergeten");
+const wwDialog = document.querySelector("ww-dialog");
+const diaOpen = document.querySelector("ww-vergeten");
 console.log(diaOpen);
 
 closeLogin.addEventListener("click", () => {
@@ -16,13 +16,12 @@ openLogin.addEventListener("click", () => {
 	loginContainer.classList.toggle("expand");
 });
 
-// diaOpen.addEventListener("click", function () {
+// diaOpen.addEventListener("click", => {
 // 	wwDialog.showModal;
 // });
 
-console.log(allButtons);
 allButtons.forEach((button) => {
-	button.addEventListener("click", function () {
+	button.addEventListener("click", () => {
 		button.parentElement.classList.toggle("expand");
 	});
 });

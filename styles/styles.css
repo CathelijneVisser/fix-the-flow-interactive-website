@@ -94,6 +94,14 @@ header {
 	font-size: 0.75em;
 }
 
+.inloggen {
+	background-color: var(--purple);
+	color: var(--white);
+	border: none;
+	text-decoration: none;
+	font-size: 0.75em;
+}
+
 @media (min-width: 900px) {
 	.nav {
 		margin-top: 0;
@@ -141,6 +149,12 @@ header {
 	.menu-container {
 		display: flex;
 	}
+
+	.inloggen {
+		background-color: var(--purple);
+		color: var(--white);
+		margin: 0;
+	}
 }
 
 /*******************************************************************************************************/
@@ -176,56 +190,6 @@ body {
 		height: 84px;
 		align-self: flex-start;
 	}
-}
-
-/***************************************************************************************aa/
-/* Login */
-/*************************************************************************************/
-
-.login-container {
-	height: 100vh;
-	margin-top: -100vh;
-	background: var(--gradient);
-	padding: 4rem;
-	transition: margin 0.75s;
-}
-
-.login-container.expand {
-	margin-top: 0;
-}
-
-.login-cross {
-	color: var(--white);
-	margin-left: 90%;
-}
-
-fieldset {
-	margin: 0 1rem;
-	display: flex;
-	flex-direction: column;
-}
-
-legend {
-	color: var(--white);
-}
-
-label {
-	color: var(--white);
-}
-
-form a {
-	border: none;
-	background: transparent;
-	color: var(--white);
-}
-
-.login-button {
-	margin-top: 0.5rem;
-	width: 3rem;
-	background: var(--reverse-gradient);
-	align-self: center;
-	color: var(--white);
-	border-radius: 0.25rem;
 }
 /***************************************************************************************aa/
 /* inleiding */
@@ -268,6 +232,12 @@ form a {
 	padding: 1rem;
 	position: relative;
 	color: var(--white);
+}
+
+.p {
+	color: var(--white);
+	position: relative;
+	max-width: 100%;
 }
 
 .inleiding p {
