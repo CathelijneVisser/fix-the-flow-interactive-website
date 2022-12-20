@@ -16,9 +16,9 @@ openLogin.addEventListener("click", () => {
 	loginContainer.classList.toggle("expand");
 });
 
-diaOpen.addEventListener("click", function () {
-	wwDialog.showModal;
-});
+// diaOpen.addEventListener("click", function () {
+// 	wwDialog.showModal;
+// });
 
 console.log(allButtons);
 allButtons.forEach((button) => {
