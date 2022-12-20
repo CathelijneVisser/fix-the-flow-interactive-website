@@ -1,24 +1,17 @@
-const closeLogin = document.querySelector(".login-cross");
-const openLogin = document.querySelector(".inloggen");
-const loginContainer = document.querySelector(".login-container");
+const BackHome = document.querySelector(".login-cross");
 const allButtons = document.querySelectorAll(".js-expand");
 const menuClosed = document.querySelector(".menu-button");
 const nav = document.querySelector(".nav");
-const wwDialog = document.querySelector("ww-dialog");
-const diaOpen = document.querySelector("ww-vergeten");
-console.log(diaOpen);
+const WWvergeten = document.querySelector("button.ww-vergeten");
+const WwvergetenP = document.querySelector("p.ww-vergeten")
 
-closeLogin.addEventListener("click", () => {
-	loginContainer.classList.toggle("expand");
+BackHome.addEventListener("click", () => {
+	window.location,href = "index,html"
 });
 
-openLogin.addEventListener("click", () => {
-	loginContainer.classList.toggle("expand");
-});
-
-// diaOpen.addEventListener("click", => {
-// 	wwDialog.showModal;
-// });
+WWvergeten.addEventListener("click", () => {
+	WwvergetenP.classList.toggle("visible")
+})
 
 allButtons.forEach((button) => {
 	button.addEventListener("click", () => {

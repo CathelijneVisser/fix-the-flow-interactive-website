@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Coding the Curbs</title>
-		<link rel="stylesheet" href="styles/styles.css" />
-		<link rel="stylesheet" href="styles/login.css" />
-	</head>
-	<body>
-		<form class="login-container">
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="25"
-				height="25"
-				fill="currentColor"
-				class="login-cross"
-				viewBox="0 0 16 16"
-			>
-				<a xlink:href="index.html"></a>
-				<path
-					d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
-				/>
-			</svg>
-			<fieldset id="inloggen">
-				<legend>Inloggen</legend>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding the Curbs</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/login.css" />
+  </head>
+  <body>
+    <form class="login-container">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="25"
+        height="25"
+        fill="currentColor"
+        class="login-cross"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+        />
+      </svg>
+      <fieldset id="inloggen">
+        <legend>Inloggen</legend>
 
-				<label for="email">Email</label>
-				<input id="email" type="email" required />
+        <label for="email">Email</label>
+        <input id="email" type="email" required />
 
-				<label for="password">wachtwoord</label>
-				<input id="password" type="password" required />
+        <label for="password">wachtwoord</label>
+        <input id="password" type="password" required />
 
-				<a href="" class="ww-vergeten">Wachtwoord vergeten?</a>
-				<p class="">
-					We hebben een e-mail gestuurd waar je een nieuw wachtwoord
-					mee kan aanvragen.
-				</p>
-				<a href="">Nog geen lid? registreren?</a>
+        <button class="ww-vergeten link" type="button">
+          Wachtwoord vergeten?
+        </button>
+        <p class="ww-vergeten">
+          We hebben een e-mail gestuurd waar je een nieuw wachtwoord mee kan
+          aanvragen.
+        </p>
+        <button class="register link" type="button">
+          Nog geen lid? registreren?
+        </button>
 
-				<button
-					type="submit"
-					class="login-button"
-					aria-label="inloggen verzenden"
-				>
-					Inloggen
-				</button>
-			</fieldset>
-		</form>
-	</body>
+        <button
+          type="submit"
+          class="login-button"
+          aria-label="inloggen verzenden"
+        >
+          Inloggen
+        </button>
+      </fieldset>
+    </form>
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
