@@ -7,6 +7,52 @@
     <link rel="stylesheet" href="styles/login.css" />
   </head>
   <body>
+    <form class="register-container">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="25"
+        height="25"
+        fill="currentColor"
+        class="login-cross-register"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+        />
+      </svg>
+      <fieldset id="registreren">
+        <legend>registreren</legend>
+
+        <label for="first-name">Voornaam</label>
+        <input id="first-name" type="text" required />
+
+        <label for="last-name">Achternaam</label>
+        <input id="last-name" type="text" required />
+
+        <label for="name">Tussenvoegsel</label>
+        <input id="name" type="text" />
+
+        <div class="gender">
+          <label for="gender">Aanhef</label>
+          <label for="madam">Mevrouw</label>
+          <input id="madam" type="radio" required />
+          <label for="sir">Meneer</label>
+          <input id="sir" type="radio" required />
+          <label for="other">Anders</label>
+          <input id="other" type="radio" required />
+          <input type="text" />
+        </div>
+
+        <label for="numberplate">Kenteken</label>
+        <input id="numberplate" type="text" required />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" required />
+
+        <label for="password">Password</label>
+        <input id="password" type="password" required />
+      </fieldset>
+    </form>
     <form class="login-container">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +68,6 @@
       </svg>
       <fieldset id="inloggen">
         <legend>Inloggen</legend>
-
         <label for="email">Email</label>
         <input id="email" type="email" required />
 

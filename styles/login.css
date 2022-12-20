@@ -11,7 +11,7 @@ body {
 	margin-top: 0;
 }
 
-.login-cross {
+svg {
 	color: var(--white);
 	margin-left: 90%;
 	margin-top: 1rem;
@@ -29,6 +29,16 @@ legend {
 
 label {
 	color: var(--white);
+}
+
+input {
+	margin-bottom: .5rem;
+}
+
+.gender-container {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
 }
 
 form a {
