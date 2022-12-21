@@ -1,99 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coding the Curbs</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/login.css" />
-  </head>
-  <body>
-    <form class="register-container">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="25"
-        height="25"
-        fill="currentColor"
-        class="login-cross-register"
-        viewBox="0 0 16 16"
-      >
-        <path
-          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
-        />
-      </svg>
-      <fieldset id="registreren">
-        <legend>registreren</legend>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Coding the Curbs</title>
+		<link rel="stylesheet" href="styles/styles.css" />
+		<link rel="stylesheet" href="styles/login.css" />
+	</head>
+	<body>
+		<form class="register-container">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="25"
+				height="25"
+				fill="currentColor"
+				class="login-cross-register"
+				viewBox="0 0 16 16"
+			>
+				<path
+					d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+				/>
+			</svg>
+			<fieldset id="register">
+				<legend>registreren</legend>
 
-        <label for="first-name">Voornaam</label>
-        <input id="first-name" type="text" required />
+				<label for="first-name">Voornaam</label>
+				<input id="first-name" type="text" required />
 
-        <label for="last-name">Achternaam</label>
-        <input id="last-name" type="text" required />
+				<label for="last-name">Achternaam</label>
+				<input id="last-name" type="text" required />
 
-        <label for="name">Tussenvoegsel</label>
-        <input id="name" type="text" />
+				<label for="name">Tussenvoegsel</label>
+				<input id="name" type="text" />
 
-        <div class="gender">
-          <label for="gender">Aanhef</label>
-          <label for="madam">Mevrouw</label>
-          <input id="madam" type="radio" required />
-          <label for="sir">Meneer</label>
-          <input id="sir" type="radio" required />
-          <label for="other">Anders</label>
-          <input id="other" type="radio" required />
-          <input type="text" />
-        </div>
+				<label for="gender">Aanhef</label>
+				<div class="gender-container">
+					<label for="madam">Mevrouw</label>
+					<input
+						id="madam"
+						class="radio"
+						type="radio"
+						name="gender"
+						required
+					/>
+					<label for="sir">Meneer</label>
+					<input
+						id="sir"
+						class="radio"
+						type="radio"
+						name="gender"
+						required
+					/>
+					<label for="other">Anders</label>
+					<input
+						id="other"
+						class="radio"
+						type="radio"
+						name="gender"
+						required
+					/>
+				</div>
 
-        <label for="numberplate">Kenteken</label>
-        <input id="numberplate" type="text" required />
+				<label for="numberplate">Kenteken</label>
+				<input id="numberplate" type="text" required />
 
-        <label for="email">Email</label>
-        <input id="email" type="email" required />
+				<label for="email">Email</label>
+				<input id="email" type="email" required />
 
-        <label for="password">Password</label>
-        <input id="password" type="password" required />
-      </fieldset>
-    </form>
-    <form class="login-container">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="25"
-        height="25"
-        fill="currentColor"
-        class="login-cross"
-        viewBox="0 0 16 16"
-      >
-        <path
-          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
-        />
-      </svg>
-      <fieldset id="inloggen">
-        <legend>Inloggen</legend>
-        <label for="email">Email</label>
-        <input id="email" type="email" required />
+				<label for="password">Password</label>
+				<input id="password" type="password" required />
 
-        <label for="password">wachtwoord</label>
-        <input id="password" type="password" required />
+				<button class="register-button" type="submit">
+					registreren
+				</button>
+			</fieldset>
+		</form>
+		<form class="login-container">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="25"
+				height="25"
+				fill="currentColor"
+				class="login-cross"
+				viewBox="0 0 16 16"
+			>
+				<path
+					d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+				/>
+			</svg>
+			<fieldset id="inloggen">
+				<legend>Inloggen</legend>
+				<label for="email">Email</label>
+				<input id="email" type="email" required />
 
-        <button class="ww-vergeten link" type="button">
-          Wachtwoord vergeten?
-        </button>
-        <p class="ww-vergeten">
-          We hebben een e-mail gestuurd waar je een nieuw wachtwoord mee kan
-          aanvragen.
-        </p>
-        <button class="register link" type="button">
-          Nog geen lid? registreren?
-        </button>
+				<label for="password">wachtwoord</label>
+				<input id="password" type="password" required />
 
-        <button
-          type="submit"
-          class="login-button"
-          aria-label="inloggen verzenden"
-        >
-          Inloggen
-        </button>
-      </fieldset>
-    </form>
-    <script src="./scripts/script.js"></script>
-  </body>
+				<button class="ww-vergeten link" type="button">
+					Wachtwoord vergeten?
+				</button>
+				<p class="ww-vergeten">
+					We hebben een e-mail gestuurd waar je een nieuw wachtwoord
+					mee kan aanvragen.
+				</p>
+				<button class="register-link link" type="button">
+					Nog geen lid? registreren?
+				</button>
+
+				<button
+					type="submit"
+					class="login-button"
+					aria-label="inloggen verzenden"
+				>
+					Inloggen
+				</button>
+			</fieldset>
+		</form>
+		<script src="./scripts/script.js"></script>
+	</body>
 </html>
