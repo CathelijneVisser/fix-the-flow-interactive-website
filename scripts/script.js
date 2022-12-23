@@ -12,6 +12,7 @@ const RegisterButton = document.querySelector(".register-button");
 
 BackHome.addEventListener("click", () => {
 	window.location((href = "index.html"));
+	console.log("skadhfaliushfil");
 });
 
 RegisterClose.addEventListener("click", RegisterGoBack);
